@@ -4,12 +4,12 @@ import mission from "./assets/mission.webp";
 import ukzn from "./assets/UKZN-logo.jpg";
 import uj from "./assets/universityOfJhb.png";
 import wits from "./assets/witsUniv.jpeg";
-import coursesData from '../../data/data.json'; // Import the JSON data
+import coursesData from '../../data/data.json'; 
 
 const Mission = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredCourses, setFilteredCourses] = useState([]);
-  const [selectedCourse, setSelectedCourse] = useState(null); // State to handle course selection
+  const [selectedCourse, setSelectedCourse] = useState(null); 
   const [universities, setUniversities] = useState([]);
 
   // Handle search input changes
