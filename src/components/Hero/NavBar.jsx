@@ -129,7 +129,7 @@ const NavBar = () => {
         </div>
 
         <ul className="hidden md:flex items-center gap-4 list-none ml-4">
-          <li><a href="" className="text-white">About</a></li>
+          <li><a href="/" className="text-white">About</a></li>
           <li><a href="/Career" className="text-white">Career</a></li>
           <li className="relative">
             <button onClick={toggleDropdown} className="flex items-center text-white">
@@ -143,11 +143,11 @@ const NavBar = () => {
             {dropdownOpen && (
               <ul className="absolute mt-2 w-48 bg-black shadow-md rounded-md py-2 z-20 opacity-80">
              
-             <li><a href="/fzDirect" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
-<li><a href="/fzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
-<li><a href="/fzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
-<li><a href="/fzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
-<li><a href="/fzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 Meetings</a></li>
+             <li><a href="/FzDirect" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
+            <li><a href="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
+            <li><a href="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
+            <li><a href="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
+             <li><a href="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 Meetings</a></li>
 
               </ul>
             )}
@@ -177,12 +177,12 @@ const NavBar = () => {
                   </button>
                   {dropdownOpen && (
                     <ul className="mt-2 w-48 bg-neutral-500 shadow-md rounded-md py-2 z-20 ">
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</a></li>
-                      <li><a href="" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</a></li>
+                      <li><a href="/FzDirect#reports" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
+                      <li><a href="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
+                      <li><a href="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
+                      <li><a href="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
+                      <li><a href="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</a></li>
+                      <li><a href="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</a></li>
                     </ul>
                   )}
                 </li>
