@@ -79,7 +79,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section id="contact" className="bg-gray-500 rounded-md opacity-60 w-full">
+      {/* <section id="contact" className="bg-gray-500 rounded-md opacity-60 w-full">
         <div>
         <h1 className="text-white t text-2xl text-center font-bold pb-4 pt-4">Contact Us</h1>
         <div className="text-center">
@@ -113,7 +113,7 @@ const Main = () => {
         </div>
             
 
-      </section>
+      </section> */}
     </section>
   );
 };
