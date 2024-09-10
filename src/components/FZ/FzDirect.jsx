@@ -56,7 +56,7 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
-      {/* Market Watch Section */}
+    
       <section id="market-watch" className="min-h-screen bg-gray-300 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Market Watch</h2>
         <Swiper
@@ -79,7 +79,7 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
-      {/* Research & Development Section */}
+      
       <section id="research-development" className="min-h-screen bg-gray-400 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Research & Development</h2>
         <Swiper
@@ -99,7 +99,7 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
-      {/* Algorithms Section */}
+      
       <section id="algorithms" className="min-h-screen bg-gray-500 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Algorithms</h2>
         <Swiper
@@ -136,7 +136,7 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
-      {/* Meetings Section */}
+     
       <section id="meetings" className="min-h-screen bg-gray-600 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">1-on-1 Meetings</h2>
         <Swiper

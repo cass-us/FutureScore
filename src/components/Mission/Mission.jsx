@@ -12,12 +12,12 @@ const Mission = () => {
   const [selectedCourse, setSelectedCourse] = useState(null); 
   const [universities, setUniversities] = useState([]);
 
-  // Handle search input changes
+  
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
     console.log(universities);
-    // Filter courses based on search term
+   
     if (value) {
       const results = {};
       coursesData.universities.forEach((university) => {
@@ -41,26 +41,26 @@ const Mission = () => {
     }
   };
 
-  // Handle course click to display detailed card
+ 
   const handleCourseClick = (course) => {
-    setSelectedCourse(course); // Set selected course for display
+    setSelectedCourse(course); 
   };
 
   useEffect(() => {
-    // Set universities data from JSON
+   
     setUniversities(coursesData.universities);
   }, []);
 
   return (
     <div className="relative w-full min-h-screen bg-gray-900 text-white">
-      {/* Background Image */}
+     
       <div
         className="absolute inset-0 bg-cover bg-center bg-black opacity-50"
         style={{ backgroundImage: `url(${mission})` }}
       ></div>
       <div className="absolute inset-0 backdrop-blur-sm bg-black/30 opacity-80"></div>
 
-      {/* Search section */}
+     
       <div className=" p-4 mt-[62px]  bg-opacity-50 bg-black w-full fixed top-0 left-0 z-10">
         <div className="flex space-x-2">
           <input
@@ -74,9 +74,9 @@ const Mission = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+    
       <div className="relative pt-[60px] pb-[200px] z-0">
-        {/* Display search results */}
+       
         {Object.keys(filteredCourses).length > 0 && (
           <div className="bg-black text-white p-4 rounded-lg mx-auto w-full sm:justify-center mb-8 sm:w-[350px] mt-8">
             <h2 className="text-lg font-semibold mb-12">Search Results:</h2>
@@ -98,7 +98,7 @@ const Mission = () => {
           </div>
         )}
 
-        {/* Display detailed card if a course is selected */}
+       
         {selectedCourse && (
           <div className="relative mx-auto  text-white p-6 rounded-lg shadow-lg w-full sm:w-[300px] mt-24">
             <h2 className="text-2xl font-semibold mb-4">{selectedCourse.name}</h2>
@@ -107,11 +107,11 @@ const Mission = () => {
             <p><strong>Required Subjects:</strong> {selectedCourse.minimum_requirements.subjects_required.join(", ")}</p>
             <p><strong>Required Level:</strong> {selectedCourse.minimum_requirements.level_required}</p>
             <p><strong>Careers:</strong> {selectedCourse.careers.join(", ")}</p>
-            {/* <a  href={}></a> */}
+           
           </div>
         )}
 
-        {/* Mission Section */}
+       
         <div className=" p-8 text-center text-white w-full mt-16">
           <h1 className="text-xl mb-4">Universities</h1>
           <div className="flex justify-center gap-2 mb-4">

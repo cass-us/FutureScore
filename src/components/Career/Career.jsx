@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import jobsData from './Jobs/Jobs.json'; // Import the JSON file
-// import background from "./assets/career.jpg";
+
 
 const Career = () => {
   const [jobs, setJobs] = useState([]);
@@ -11,12 +11,12 @@ const Career = () => {
     setJobs(jobsData.jobs);
   }, []);
   
-  // Handle search input changes
+  
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  // Handle category filter change
+ //filer
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -41,16 +41,7 @@ const Career = () => {
       >
         <div className="bg-black bg-opacity-70 p-6">
           <h1 className="text-white text-3xl font-bold text-center">Careers at Futurescore</h1>
-          {/* Optional descriptive paragraph */}
-          {/* <p className="text-white text-center">
-            Open positions
-            These are the opportunities available at Futurescore. 
-            It’s important to note that these are volunteer opportunities 
-            as per Futurescore’s open-source policy.
-            However, if you are deciding to apply through this portal instead 
-            of joining our membership, then you will be expected to contribute at least 10 hours 
-            a week to the course. Lack of output early on is immediate dismissal.
-          </p> */}
+         
         </div>
       </div>
 
