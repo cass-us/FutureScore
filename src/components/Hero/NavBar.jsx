@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';  // Import useLocation for route checking
+import { useLocation, Link } from 'react-router-dom'; 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -12,8 +12,7 @@ import back3 from "../../assets/back3.jpg";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const location = useLocation(); // Get the current route
-
+  const location = useLocation();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -113,10 +112,10 @@ const NavBar = () => {
         <div className="flex items-center">
           <img src={logo} className="hidden bg-red-600 rounded-md w-8 h-8" alt="FutureScore Logo" />
           <h2 className="font-bold tracking-wide text-red-500">
-            <a href="/">
+            <Link to="/">
               FUTURE<span className="text-white">SCORE</span>
               <BoltIcon className="text-red-500" />
-            </a>
+            </Link>
           </h2>
         </div>
 
@@ -129,8 +128,8 @@ const NavBar = () => {
         </div>
 
         <ul className="hidden md:flex items-center gap-4 list-none ml-4">
-          <li><a href="/" className="text-white">About</a></li>
-          <li><a href="/Career" className="text-white">Career</a></li>
+          <li><Link to="/" className="text-white">About</Link></li>
+          <li><Link to="/Career" className="text-white">Career</Link></li>
           <li className="relative">
             <button onClick={toggleDropdown} className="flex items-center text-white">
               FS-Direct
@@ -142,17 +141,15 @@ const NavBar = () => {
             </button>
             {dropdownOpen && (
               <ul className="absolute mt-2 w-48 bg-black shadow-md rounded-md py-2 z-20 opacity-80">
-             
-             <li><a href="/FzDirect" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
-            <li><a href="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
-            <li><a href="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
-            <li><a href="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
-             <li><a href="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 Meetings</a></li>
-
+                <li><Link to="/FzDirect" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</Link></li>
+                <li><Link to="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</Link></li>
+                <li><Link to="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</Link></li>
+                <li><Link to="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</Link></li>
+                <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 Meetings</Link></li>
               </ul>
             )}
           </li>
-          <li><a href="" className="text-white">Contact</a></li>
+          <li><Link to="/Contact" className="text-white">Contact</Link></li>
         </ul>
 
         {menuOpen && (
@@ -163,9 +160,9 @@ const NavBar = () => {
                 <CloseIcon style={{ fontSize: '2rem' }} />
               </button>
               <ul className="flex flex-col bg-black opacity-90 items-start gap-4 mt-4">
-                <li><a href="/Mission" className="text-white">Mission</a></li>
-                <li><a href="" className="text-white">About</a></li>
-                <li><a href="/Career" className="text-white">Career</a></li>
+                <li><Link to="/Mission" className="text-white">Mission</Link></li>
+                <li><Link to="/" className="text-white">About</Link></li>
+                <li><Link to="/Career" className="text-white">Career</Link></li>
                 <li className="relative">
                   <button onClick={toggleDropdown} className="flex items-center text-white">
                     FS-Direct
@@ -177,23 +174,23 @@ const NavBar = () => {
                   </button>
                   {dropdownOpen && (
                     <ul className="mt-2 w-48 bg-neutral-500 shadow-md rounded-md py-2 z-20 ">
-                      <li><a href="/fzDirect#reports" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</a></li>
-                      <li><a href="/fzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</a></li>
-                      <li><a href="/fzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</a></li>
-                      <li><a href="/fzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</a></li>
-                      <li><a href="/fzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</a></li>
-                      <li><a href="/fzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</a></li>
+                      <li><Link to="/FzDirect#reports" className="block px-4 py-2 text-white hover:bg-gray-700">Reports</Link></li>
+                      <li><Link to="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</Link></li>
+                      <li><Link to="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</Link></li>
+                      <li><Link to="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</Link></li>
+                      <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</Link></li>
+                      <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</Link></li>
                     </ul>
                   )}
                 </li>
-                <li><a href="" className="text-white">Contact</a></li>
+                <li><Link to="/Contact" className="text-white">Contact</Link></li>
               </ul>
             </div>
           </>
         )}
       </nav>
 
-      {/* Conditionally render the slideshow only on the home page */}
+     
       {location.pathname === '/' && <Slideshow />}
     </>
   );
