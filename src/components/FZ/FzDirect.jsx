@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules'; // Updated import path
-import "swiper/swiper-bundle.css";  // Ensure correct CSS is imported
- // CSS for Swiper styles
+import { Navigation, Pagination } from 'swiper/modules';
+import "swiper/swiper-bundle.css"; 
+ 
 import "./swiper-custom.css"; 
 import alg from "./assets/alg2.jpg";
 import reports from "./assets/reports.jpg";
