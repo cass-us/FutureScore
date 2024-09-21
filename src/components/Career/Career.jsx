@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import jobsData from './Jobs/Jobs.json'; // Import the JSON file
+<<<<<<< HEAD
 // import background from "./assets/career.jpg";
+=======
+
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 
 const Career = () => {
   const [jobs, setJobs] = useState([]);
@@ -11,12 +15,20 @@ const Career = () => {
     setJobs(jobsData.jobs);
   }, []);
   
+<<<<<<< HEAD
   // Handle search input changes
+=======
+  
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
+<<<<<<< HEAD
   // Handle category filter change
+=======
+ //filer
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -41,6 +53,7 @@ const Career = () => {
       >
         <div className="bg-black bg-opacity-70 p-6">
           <h1 className="text-white text-3xl font-bold text-center">Careers at Futurescore</h1>
+<<<<<<< HEAD
 {/*           
            <p className="text-gray-400 text-center mt-40">
             Open positions
@@ -51,6 +64,9 @@ const Career = () => {
             of joining our membership, then you will be expected to contribute at least 10 hours 
             a week to the course. Lack of output early on is immediate dismissal.
           </p> */}
+=======
+         
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
         </div>
       </div>
 
@@ -83,7 +99,11 @@ const Career = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
     
+=======
+      {/* Jobs section */}
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <div className="bg-black bg-opacity-80 container mx-auto p-6">
         <h1 className="text-white text-3xl font-bold mb-6 text-center">Job Opportunities</h1>
         {filteredJobs.map((category, index) => (

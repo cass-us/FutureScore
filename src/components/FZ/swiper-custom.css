@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 
+=======
+/* Change the color of the next/prev navigation icons */
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: red; 
 }
 
+<<<<<<< HEAD
 
+=======
+/* Change the color of the pagination bullets */
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 .swiper-pagination-bullet {
   background: red; 
 }
 
+<<<<<<< HEAD
+=======
+/* Change the color of the active pagination bullet */
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 .swiper-pagination-bullet-active {
   background: darkred; 
 }

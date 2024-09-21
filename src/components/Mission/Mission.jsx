@@ -4,20 +4,35 @@ import mission from "./assets/mission.webp";
 import ukzn from "./assets/UKZN-logo.jpg";
 import uj from "./assets/universityOfJhb.png";
 import wits from "./assets/witsUniv.jpeg";
+<<<<<<< HEAD
 import coursesData from '../../data/data.json'; // Import the JSON data
+=======
+import coursesData from '../../data/data.json'; 
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 
 const Mission = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredCourses, setFilteredCourses] = useState([]);
+<<<<<<< HEAD
   const [selectedCourse, setSelectedCourse] = useState(null); // State to handle course selection
   const [universities, setUniversities] = useState([]);
 
   // Handle search input changes
+=======
+  const [selectedCourse, setSelectedCourse] = useState(null); 
+  const [universities, setUniversities] = useState([]);
+
+  
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
     console.log(universities);
+<<<<<<< HEAD
     // Filter courses based on search term
+=======
+   
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
     if (value) {
       const results = {};
       coursesData.universities.forEach((university) => {
@@ -41,6 +56,7 @@ const Mission = () => {
     }
   };
 
+<<<<<<< HEAD
   // Handle course click to display detailed card
   const handleCourseClick = (course) => {
     setSelectedCourse(course); // Set selected course for display
@@ -48,19 +64,36 @@ const Mission = () => {
 
   useEffect(() => {
     // Set universities data from JSON
+=======
+ 
+  const handleCourseClick = (course) => {
+    setSelectedCourse(course); 
+  };
+
+  useEffect(() => {
+   
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
     setUniversities(coursesData.universities);
   }, []);
 
   return (
     <div className="relative w-full min-h-screen bg-gray-900 text-white">
+<<<<<<< HEAD
       {/* Background Image */}
+=======
+     
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <div
         className="absolute inset-0 bg-cover bg-center bg-black opacity-50"
         style={{ backgroundImage: `url(${mission})` }}
       ></div>
       <div className="absolute inset-0 backdrop-blur-sm bg-black/30 opacity-80"></div>
 
+<<<<<<< HEAD
       {/* Search section */}
+=======
+     
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <div className=" p-4 mt-[62px]  bg-opacity-50 bg-black w-full fixed top-0 left-0 z-10">
         <div className="flex space-x-2">
           <input
@@ -74,9 +107,15 @@ const Mission = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Main Content */}
       <div className="relative pt-[60px] pb-[200px] z-0">
         {/* Display search results */}
+=======
+    
+      <div className="relative pt-[60px] pb-[200px] z-0">
+       
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
         {Object.keys(filteredCourses).length > 0 && (
           <div className="bg-black text-white p-4 rounded-lg mx-auto w-full sm:justify-center mb-8 sm:w-[350px] mt-8">
             <h2 className="text-lg font-semibold mb-12">Search Results:</h2>
@@ -98,7 +137,11 @@ const Mission = () => {
           </div>
         )}
 
+<<<<<<< HEAD
         {/* Display detailed card if a course is selected */}
+=======
+       
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
         {selectedCourse && (
           <div className="relative mx-auto  text-white p-6 rounded-lg shadow-lg w-full sm:w-[300px] mt-24">
             <h2 className="text-2xl font-semibold mb-4">{selectedCourse.name}</h2>
@@ -107,11 +150,19 @@ const Mission = () => {
             <p><strong>Required Subjects:</strong> {selectedCourse.minimum_requirements.subjects_required.join(", ")}</p>
             <p><strong>Required Level:</strong> {selectedCourse.minimum_requirements.level_required}</p>
             <p><strong>Careers:</strong> {selectedCourse.careers.join(", ")}</p>
+<<<<<<< HEAD
             {/* <a  href={}></a> */}
           </div>
         )}
 
         {/* Mission Section */}
+=======
+           
+          </div>
+        )}
+
+       
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
         <div className=" p-8 text-center text-white w-full mt-16">
           <h1 className="text-xl mb-4">Universities</h1>
           <div className="flex justify-center gap-2 mb-4">

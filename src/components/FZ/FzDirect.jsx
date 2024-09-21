@@ -1,6 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+<<<<<<< HEAD
 import { Navigation, Pagination } from "swiper/modules"; 
 import "swiper/swiper-bundle.css";
+=======
+import { Navigation, Pagination } from 'swiper/modules';
+import "swiper/swiper-bundle.css"; 
+ 
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 import "./swiper-custom.css"; 
 import alg from "./assets/alg2.jpg";
 import reports from "./assets/reports.jpg";
@@ -31,10 +37,18 @@ const FzDirect = () => {
 
   return (
     <div className="pt-16">
+<<<<<<< HEAD
      
       <section id="reports" className="min-h-screen bg-gray-200 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Reports</h2>
         <Swiper
+=======
+      {/* Reports Section */}
+      <section id="reports" className="min-h-screen bg-gray-200 p-8 flex flex-col justify-center items-center">
+        <h2 className="text-4xl font-bold mb-4">Reports</h2>
+        <Swiper
+
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
           modules={[Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
@@ -54,7 +68,11 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
+<<<<<<< HEAD
   
+=======
+    
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <section id="market-watch" className="min-h-screen bg-gray-300 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Market Watch</h2>
         <Swiper
@@ -77,7 +95,11 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
+<<<<<<< HEAD
     
+=======
+      
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <section id="research-development" className="min-h-screen bg-gray-400 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Research & Development</h2>
         <Swiper
@@ -97,7 +119,11 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <section id="algorithms" className="min-h-screen bg-gray-500 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">Algorithms</h2>
         <Swiper
@@ -134,7 +160,11 @@ const FzDirect = () => {
         </Swiper>
       </section>
 
+<<<<<<< HEAD
       
+=======
+     
+>>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
       <section id="meetings" className="min-h-screen bg-gray-600 p-8 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-bold mb-4">1-on-1 Meetings</h2>
         <Swiper

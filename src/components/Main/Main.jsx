@@ -21,7 +21,7 @@ const Main = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-3">
   <div className="text-center bg-gray-800 rounded-lg overflow-hidden">
     <h2 className="text-white mb-2 md:hidden">Corporate</h2>
     <img
