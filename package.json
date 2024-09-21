@@ -14,7 +14,6 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.0.2",
     "@mui/material": "^6.0.2",
-<<<<<<< HEAD
     "footballscore": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -26,20 +25,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-=======
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.3.0",
-    "react-router-dom": "^6.26.2",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.12"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -50,10 +35,6 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.42",
-<<<<<<< HEAD
-=======
-    "rollup-plugin-postcss": "^4.0.2",
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.1"
   }
