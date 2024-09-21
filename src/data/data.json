@@ -1,0 +1,354 @@
+{
+    "universities": [
+      {
+        "name": "University of KwaZulu-Natal",
+        "link": "https://ukzn.ac.za/schools/schools/",
+        "logo": "./assets/UKZN-logo.jpg",
+        "faculties": [
+          {
+            "name": "Faculty of Engineering",
+            "courses": [
+              {
+                "id": 1,
+                "name": "BEng Chemical Engineering",
+                "minimum_requirements": {
+                  "points": 30,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Chemical Engineer", "Process Engineer"],
+                "universities": ["University of KwaZulu-Natal"]
+              },
+              {
+                "id": 2,
+                "name": "BEng Electrical Engineering",
+                "minimum_requirements": {
+                  "points": 32,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Electrical Engineer", "Electronics Engineer"],
+                "universities": ["University of KwaZulu-Natal"]
+              },
+              {
+                "id": 3,
+                "name": "BEng Mechanical Engineering",
+                "minimum_requirements": {
+                  "points": 31,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Mechanical Engineer", "Design Engineer"],
+                "universities": ["University of KwaZulu-Natal"]
+              },
+              {
+                "id": 4,
+                "name": "BEng Civil Engineering",
+                "minimum_requirements": {
+                  "points": 29,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Civil Engineer", "Structural Engineer"],
+                "universities": ["University of KwaZulu-Natal"]
+              }
+            ]
+          },
+          {
+            "name": "Faculty of Science",
+            "courses": [
+              {
+                "id": 5,
+                "name": "BSc Physics",
+                "minimum_requirements": {
+                  "points": 28,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Physicist", "Research Scientist"],
+                "universities": ["University of KwaZulu-Natal"]
+              },
+              {
+                "id": 6,
+                "name": "BSc Chemistry",
+                "minimum_requirements": {
+                  "points": 27,
+                  "subjects_required": ["Mathematics", "Chemistry"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Chemist", "Pharmacologist"],
+                "universities": ["University of KwaZulu-Natal"]
+              },
+              {
+                "id": 7,
+                "name": "BSc Biology",
+                "minimum_requirements": {
+                  "points": 26,
+                  "subjects_required": ["Biology", "Physical Science"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Biologist", "Biochemist"],
+                "universities": ["University of KwaZulu-Natal"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "University of Johannesburg",
+        "link": "https://www.uj.ac.za/faculties/",
+        "logo": "./assets/universityOfJhb.png",
+        "faculties": [
+          {
+            "name": "Faculty of Science",
+            "courses": [
+              {
+                "id": 8,
+                "name": "BSc Computer Science",
+                "minimum_requirements": {
+                  "points": 28,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Software Developer", "Data Analyst"],
+                "universities": ["University of Johannesburg"]
+              },
+              {
+                "id": 9,
+                "name": "BSc Information Technology",
+                "minimum_requirements": {
+                  "points": 29,
+                  "subjects_required": ["Mathematics", "Computer Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["IT Consultant", "Systems Analyst"],
+                "universities": ["University of Johannesburg"]
+              },
+              {
+                "id": 10,
+                "name": "BSc Data Science",
+                "minimum_requirements": {
+                  "points": 30,
+                  "subjects_required": ["Mathematics", "Statistics"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Data Scientist", "Machine Learning Engineer"],
+                "universities": ["University of Johannesburg"]
+              }
+            ]
+          },
+          {
+            "name": "Faculty of Humanities",
+            "courses": [
+              {
+                "id": 11,
+                "name": "BA Psychology",
+                "minimum_requirements": {
+                  "points": 26,
+                  "subjects_required": ["English", "Life Orientation"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Clinical Psychologist", "Counselor"],
+                "universities": ["University of Johannesburg"]
+              },
+              {
+                "id": 12,
+                "name": "BA Sociology",
+                "minimum_requirements": {
+                  "points": 25,
+                  "subjects_required": ["English", "History"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Sociologist", "Social Worker"],
+                "universities": ["University of Johannesburg"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "University of the Witwatersrand",
+        "link": "https://www.wits.ac.za/",
+        "logo": "./assets/witsUniv.jpeg",
+        "faculties": [
+          {
+            "name": "Faculty of Commerce, Law and Management",
+            "courses": [
+              {
+                "id": 13,
+                "name": "BCom Accounting",
+                "minimum_requirements": {
+                  "points": 32,
+                  "subjects_required": ["Accounting", "Mathematics"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Accountant", "Financial Analyst"],
+                "universities": ["University of the Witwatersrand"]
+              },
+              {
+                "id": 14,
+                "name": "BCom Economics",
+                "minimum_requirements": {
+                  "points": 31,
+                  "subjects_required": ["Mathematics", "Economics"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Economist", "Market Research Analyst"],
+                "universities": ["University of the Witwatersrand"]
+              }
+            ]
+          },
+          {
+            "name": "Faculty of Engineering and the Built Environment",
+            "courses": [
+              {
+                "id": 15,
+                "name": "BSc Civil Engineering",
+                "minimum_requirements": {
+                  "points": 29,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Civil Engineer", "Structural Engineer"],
+                "universities": ["University of the Witwatersrand"]
+              },
+              {
+                "id": 16,
+                "name": "BSc Electrical Engineering",
+                "minimum_requirements": {
+                  "points": 30,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Electrical Engineer", "Electronics Engineer"],
+                "universities": ["University of the Witwatersrand"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "University of Pretoria",
+        "link": "https://www.up.ac.za/",
+        "logo": "./assets/universityOfPretoria.png",
+        "faculties": [
+          {
+            "name": "Faculty of Engineering, Built Environment and Information Technology",
+            "courses": [
+              {
+                "id": 17,
+                "name": "BEng Mechanical Engineering",
+                "minimum_requirements": {
+                  "points": 30,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Mechanical Engineer", "Automotive Engineer"],
+                "universities": ["University of Pretoria"]
+              },
+              {
+                "id": 18,
+                "name": "BEng Industrial Engineering",
+                "minimum_requirements": {
+                  "points": 29,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Industrial Engineer", "Operations Manager"],
+                "universities": ["University of Pretoria"]
+              }
+            ]
+          },
+          {
+            "name": "Faculty of Natural and Agricultural Sciences",
+            "courses": [
+              {
+                "id": 19,
+                "name": "BSc Mathematics",
+                "minimum_requirements": {
+                  "points": 27,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Mathematician", "Data Analyst"],
+                "universities": ["University of Pretoria"]
+              },
+              {
+                "id": 20,
+                "name": "BSc Agricultural Economics",
+                "minimum_requirements": {
+                  "points": 28,
+                  "subjects_required": ["Mathematics", "Agricultural Science"],
+                  "level_required": "Level 4"
+                },
+                "careers": ["Agricultural Economist", "Farm Manager"],
+                "universities": ["University of Pretoria"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "University of Cape Town",
+        "link": "https://www.uct.ac.za/",
+        "logo": "./assets/UCT-logo.png",
+        "faculties": [
+          {
+            "name": "Faculty of Health Sciences",
+            "courses": [
+              {
+                "id": 21,
+                "name": "MBChB",
+                "minimum_requirements": {
+                  "points": 34,
+                  "subjects_required": ["Mathematics", "Life Sciences"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Medical Doctor", "Surgeon"],
+                "universities": ["University of Cape Town"]
+              },
+              {
+                "id": 22,
+                "name": "BSc Occupational Therapy",
+                "minimum_requirements": {
+                  "points": 32,
+                  "subjects_required": ["Mathematics", "Life Sciences"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Occupational Therapist", "Rehabilitation Specialist"],
+                "universities": ["University of Cape Town"]
+              }
+            ]
+          },
+          {
+            "name": "Faculty of Engineering and the Built Environment",
+            "courses": [
+              {
+                "id": 23,
+                "name": "BEng Chemical Engineering",
+                "minimum_requirements": {
+                  "points": 31,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 5"
+                },
+                "careers": ["Chemical Engineer", "Process Engineer"],
+                "universities": ["University of Cape Town"]
+              },
+              {
+                "id": 24,
+                "name": "BEng Electrical Engineering",
+                "minimum_requirements": {
+                  "points": 30,
+                  "subjects_required": ["Mathematics", "Physical Science"],
+                  "level_required": "Level 6"
+                },
+                "careers": ["Electrical Engineer", "Electronics Engineer"],
+                "universities": ["University of Cape Town"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

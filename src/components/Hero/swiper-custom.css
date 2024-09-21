@@ -1,0 +1,15 @@
+/* Change the color of the next/prev navigation icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: red; 
+}
+
+/* Change the color of the pagination bullets */
+.swiper-pagination-bullet {
+  background: red; 
+}
+
+/* Change the color of the active pagination bullet */
+.swiper-pagination-bullet-active {
+  background: darkred; 
+}

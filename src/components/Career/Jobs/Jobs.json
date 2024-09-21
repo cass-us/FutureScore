@@ -1,0 +1,55 @@
+{
+    "jobs": [
+      {
+        "category": "Creative",
+        "roles": [
+          {
+            "title": "Content Creator",
+            "description": "Develop content for the webinars, including scripts, presentations, and handouts.",
+            "apply_link": "Apply →"
+          },
+          {
+            "title": "Web UX Designer",
+            "description": "Create wire-frame models for website navigation, layout, and structure.",
+            "apply_link": "Apply →"
+          }
+        ]
+      },
+      {
+        "category": "Technical",
+        "roles": [
+          {
+            "title": "Database Administrator",
+            "description": "Create and manage database connections and schemas to ensure the security, accuracy and speed of data transfers.",
+            "apply_link": "Apply →"
+          },
+          {
+            "title": "Project Manager",
+            "description": "Oversee the overall execution of technical projects, manage timelines, resources, and communication between teams.",
+            "apply_link": "Apply →"
+          }
+        ]
+      },
+      {
+        "category": "Public Relations",
+        "roles": [
+          {
+            "title": "Content Creator",
+            "description": "Develop content for the webinars, including scripts, presentations, and handouts.",
+            "apply_link": "Apply →"
+          },
+          {
+            "title": "Events Coordinator",
+            "description": "Plan, manage, and execute webinars.",
+            "apply_link": "Apply →"
+          },
+          {
+            "title": "Community Manager",
+            "description": "Manage online communities (e.g. WhatsApp groups & Discord servers) and foster engagement among members.",
+            "apply_link": "Apply →"
+          }
+        ]
+      }
+    ]
+  }
+  
