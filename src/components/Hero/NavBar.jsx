@@ -1,17 +1,16 @@
 import { useState, useEffect } from 'react';
-<<<<<<< HEAD
+
 import { Link, useLocation } from 'react-router-dom'; 
-=======
+
 import { useLocation, Link } from 'react-router-dom'; 
 >>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-<<<<<<< HEAD
-=======
+
 import logo from '../../assets/cropped-futurescore-logo-2689916277-e1679163584791.jpg';
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+
 import BoltIcon from '@mui/icons-material/Bolt';
 import back2 from "../../assets/back2.jpg";
 import back3 from "../../assets/back3.jpg";
@@ -19,12 +18,10 @@ import back3 from "../../assets/back3.jpg";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-<<<<<<< HEAD
-  const location = useLocation(); // Get the current location
 
-=======
+  const location = useLocation(); // Get the current locatio
   const location = useLocation();
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -71,7 +68,7 @@ const NavBar = () => {
     };
 
     return (
-<<<<<<< HEAD
+
       <div className="relative w-full h-[calc(100vh-15rem)] bg-black md:p-8">
         {slides.map((slide, index) => (
           <div
@@ -81,7 +78,7 @@ const NavBar = () => {
             <img src={slide.src} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
             <div className="absolute inset-0 flex items-center justify-center p-4 bg-gradient-to-t from-black via-transparent to-transparent md:bg-none">
               <h2 className="text-2xl text-white bg-black bg-opacity-60 p-4 rounded-md text-center md:w-full md:h-1/2 md:mt-40 md:p-24">
-=======
+
       <div className="relative w-full h-[calc(100vh-20rem)] bg-black">
         {slides.map((slide, index) => (
           <div
@@ -92,8 +89,7 @@ const NavBar = () => {
           >
             <img src={slide.src} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
             <div className="absolute inset-0 flex items-center justify-center p-4">
-              <h2 className="text-2xl text-white bg-black bg-opacity-60 p-4 rounded-md text-center">
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+              <h2 className="text-2xl text-white bg-black bg-opacity-60 p-4 rounded-md text-center"
                 {slide.caption}
               </h2>
             </div>
@@ -107,13 +103,12 @@ const NavBar = () => {
           &#10095;
         </button>
 
-<<<<<<< HEAD
         <div className="absolute bottom-8 right-4 ">
           {slides.map((_, index) => (
             <span
               key={index}
               className={`inline-block w-3 h-3 rounded-full mx-1 cursor-pointer ${index === currentSlide ? 'bg-opacity-100' : 'bg-opacity-50'}`}
-=======
+
         <div className="absolute bottom-8 right-4">
           {slides.map((_, index) => (
             <span
@@ -121,18 +116,17 @@ const NavBar = () => {
               className={`inline-block w-3 h-3 rounded-full mx-1 cursor-pointer ${
                 index === currentSlide ? 'bg-opacity-100' : 'bg-opacity-50'
               }`}
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+
               onClick={() => goToSlide(index)}
             ></span>
           ))}
         </div>
 
         <div className="absolute inset-x-0 bottom-4 flex justify-center">
-<<<<<<< HEAD
+
           <button className="bg-red-500 rounded-md p-4 m-2 text-white md:p-4 md:rounded-lg">
-=======
-          <button className="bg-red-500 rounded-md p-2 m-2 text-white">
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+
+          <button className="bg-red-500 rounded-md p-2 m-2 text-white"
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSePQG76G4cTfSnZmFifj-XgJTpWA4xHdN_NW_sLD67_8OmaQA/viewform?pli=1">
               Join Membership
             </a>
@@ -144,14 +138,12 @@ const NavBar = () => {
 
   return (
     <>
-<<<<<<< HEAD
       <nav className="bg-black flex items-center justify-between h-[80px] md:h-[100px] md:opacity-90 p-4 fixed top-0 w-full z-10">
         <div className="flex items-center">
           <h2 className="font-bold tracking-wide text-red-500 ml-4 md:text-2xl">
             <Link to="/">
               FUTURE<span className="text-white">SCORE</span>
               <BoltIcon className="text-red-500 md:size-14" />
-=======
       <nav className="bg-black flex items-center justify-between p-4 fixed top-0 w-full z-10">
         <div className="flex items-center">
           <img src={logo} className="hidden bg-red-600 rounded-md w-8 h-8" alt="FutureScore Logo" />
@@ -159,7 +151,6 @@ const NavBar = () => {
             <Link to="/">
               FUTURE<span className="text-white">SCORE</span>
               <BoltIcon className="text-red-500" />
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
             </Link>
           </h2>
         </div>
@@ -171,8 +162,6 @@ const NavBar = () => {
             <MenuIcon className="text-red-600" style={{ fontSize: '2rem' }} />
           )}
         </div>
-
-<<<<<<< HEAD
         <ul className="hidden md:flex items-center gap-4 list-none ml-8 md:ml-8">
           <li><Link to="/" className="text-white md:font-semibold">About</Link></li>
           <li><Link to="/Career" className="text-white md:font-semibold">Career</Link></li>
@@ -180,7 +169,7 @@ const NavBar = () => {
             <button onClick={toggleDropdown} className="flex items-center text-white md:font-semibold">
               FS-Direct
               {dropdownOpen ? <ArrowDropUpIcon className="ml-1" /> : <ArrowDropDownIcon className="ml-1" />}
-=======
+
         <ul className="hidden md:flex items-center gap-4 list-none ml-4">
           <li><Link to="/" className="text-white">About</Link></li>
           <li><Link to="/Career" className="text-white">Career</Link></li>
@@ -192,7 +181,6 @@ const NavBar = () => {
               ) : (
                 <ArrowDropDownIcon className="ml-1" />
               )}
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
             </button>
             {dropdownOpen && (
               <ul className="absolute mt-2 w-48 bg-black shadow-md rounded-md py-2 z-20 opacity-80">
@@ -204,10 +192,8 @@ const NavBar = () => {
               </ul>
             )}
           </li>
-<<<<<<< HEAD
-=======
           <li><Link to="/Contact" className="text-white">Contact</Link></li>
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
+
         </ul>
 
         {menuOpen && (
@@ -224,15 +210,12 @@ const NavBar = () => {
                 <li className="relative">
                   <button onClick={toggleDropdown} className="flex items-center text-white">
                     FS-Direct
-<<<<<<< HEAD
-                    {dropdownOpen ? <ArrowDropUpIcon className="ml-8" /> : <ArrowDropDownIcon className="ml-1" />}
-=======
+                   {dropdownOpen ? <ArrowDropUpIcon className="ml-8" /> : <ArrowDropDownIcon className="ml-1" />}
                     {dropdownOpen ? (
                       <ArrowDropUpIcon className="ml-8" />
                     ) : (
                       <ArrowDropDownIcon className="ml-1" />
                     )}
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
                   </button>
                   {dropdownOpen && (
                     <ul className="mt-2 w-48 bg-neutral-500 shadow-md rounded-md py-2 z-20 ">
@@ -240,31 +223,24 @@ const NavBar = () => {
                       <li><Link to="/FzDirect#market-watch" className="block px-4 py-2 text-white hover:bg-gray-700">Market Watch</Link></li>
                       <li><Link to="/FzDirect#research-development" className="block px-4 py-2 text-white hover:bg-gray-700">Research & Development</Link></li>
                       <li><Link to="/FzDirect#algorithms" className="block px-4 py-2 text-white hover:bg-gray-700">Algorithms</Link></li>
-<<<<<<< HEAD
                       <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 Meetings</Link></li>
                     </ul>
                   )}
                 </li>
-=======
                       <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</Link></li>
                       <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</Link></li>
                     </ul>
                   )}
                 </li>
                 <li><Link to="/Contact" className="text-white">Contact</Link></li>
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
               </ul>
             </div>
           </>
         )}
       </nav>
-<<<<<<< HEAD
       {location.pathname === '/' && <Slideshow />} {/* Conditionally render Slideshow */}
-=======
+            {location.pathname === '/' && <Slideshow />}
 
-     
-      {location.pathname === '/' && <Slideshow />}
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
     </>
   );
 };
