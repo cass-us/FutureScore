@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import BoltIcon from '@mui/icons-material/Bolt';
-import back2 from "../../assets/back2.jpg";
+import back2 from "../../assets/back2.jpg"; 
 import back3 from "../../assets/back3.jpg";
 
 const NavBar = () => {
