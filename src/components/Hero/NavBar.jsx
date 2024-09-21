@@ -1,16 +1,9 @@
 import { useState, useEffect } from 'react';
-
 import { Link, useLocation } from 'react-router-dom'; 
-
-import { useLocation, Link } from 'react-router-dom'; 
->>>>>>> 3f5bc636f0c7c71d5c57de4b72d77163b08ff216
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-
-import logo from '../../assets/cropped-futurescore-logo-2689916277-e1679163584791.jpg';
-
 import BoltIcon from '@mui/icons-material/Bolt';
 import back2 from "../../assets/back2.jpg";
 import back3 from "../../assets/back3.jpg";
@@ -18,9 +11,7 @@ import back3 from "../../assets/back3.jpg";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const location = useLocation(); // Get the current locatio
-  const location = useLocation();
+  const location = useLocation(); // Get the current location
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -68,7 +59,6 @@ const NavBar = () => {
     };
 
     return (
-
       <div className="relative w-full h-[calc(100vh-15rem)] bg-black md:p-8">
         {slides.map((slide, index) => (
           <div
@@ -78,18 +68,6 @@ const NavBar = () => {
             <img src={slide.src} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
             <div className="absolute inset-0 flex items-center justify-center p-4 bg-gradient-to-t from-black via-transparent to-transparent md:bg-none">
               <h2 className="text-2xl text-white bg-black bg-opacity-60 p-4 rounded-md text-center md:w-full md:h-1/2 md:mt-40 md:p-24">
-
-      <div className="relative w-full h-[calc(100vh-20rem)] bg-black">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <img src={slide.src} className="w-full h-full object-cover" alt={`Slide ${index + 1}`} />
-            <div className="absolute inset-0 flex items-center justify-center p-4">
-              <h2 className="text-2xl text-white bg-black bg-opacity-60 p-4 rounded-md text-center"
                 {slide.caption}
               </h2>
             </div>
@@ -108,25 +86,13 @@ const NavBar = () => {
             <span
               key={index}
               className={`inline-block w-3 h-3 rounded-full mx-1 cursor-pointer ${index === currentSlide ? 'bg-opacity-100' : 'bg-opacity-50'}`}
-
-        <div className="absolute bottom-8 right-4">
-          {slides.map((_, index) => (
-            <span
-              key={index}
-              className={`inline-block w-3 h-3 rounded-full mx-1 cursor-pointer ${
-                index === currentSlide ? 'bg-opacity-100' : 'bg-opacity-50'
-              }`}
-
               onClick={() => goToSlide(index)}
             ></span>
           ))}
         </div>
 
         <div className="absolute inset-x-0 bottom-4 flex justify-center">
-
           <button className="bg-red-500 rounded-md p-4 m-2 text-white md:p-4 md:rounded-lg">
-
-          <button className="bg-red-500 rounded-md p-2 m-2 text-white"
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSePQG76G4cTfSnZmFifj-XgJTpWA4xHdN_NW_sLD67_8OmaQA/viewform?pli=1">
               Join Membership
             </a>
@@ -144,13 +110,6 @@ const NavBar = () => {
             <Link to="/">
               FUTURE<span className="text-white">SCORE</span>
               <BoltIcon className="text-red-500 md:size-14" />
-      <nav className="bg-black flex items-center justify-between p-4 fixed top-0 w-full z-10">
-        <div className="flex items-center">
-          <img src={logo} className="hidden bg-red-600 rounded-md w-8 h-8" alt="FutureScore Logo" />
-          <h2 className="font-bold tracking-wide text-red-500">
-            <Link to="/">
-              FUTURE<span className="text-white">SCORE</span>
-              <BoltIcon className="text-red-500" />
             </Link>
           </h2>
         </div>
@@ -162,6 +121,7 @@ const NavBar = () => {
             <MenuIcon className="text-red-600" style={{ fontSize: '2rem' }} />
           )}
         </div>
+
         <ul className="hidden md:flex items-center gap-4 list-none ml-8 md:ml-8">
           <li><Link to="/" className="text-white md:font-semibold">About</Link></li>
           <li><Link to="/Career" className="text-white md:font-semibold">Career</Link></li>
@@ -169,18 +129,6 @@ const NavBar = () => {
             <button onClick={toggleDropdown} className="flex items-center text-white md:font-semibold">
               FS-Direct
               {dropdownOpen ? <ArrowDropUpIcon className="ml-1" /> : <ArrowDropDownIcon className="ml-1" />}
-
-        <ul className="hidden md:flex items-center gap-4 list-none ml-4">
-          <li><Link to="/" className="text-white">About</Link></li>
-          <li><Link to="/Career" className="text-white">Career</Link></li>
-          <li className="relative">
-            <button onClick={toggleDropdown} className="flex items-center text-white">
-              FS-Direct
-              {dropdownOpen ? (
-                <ArrowDropUpIcon className="ml-1" />
-              ) : (
-                <ArrowDropDownIcon className="ml-1" />
-              )}
             </button>
             {dropdownOpen && (
               <ul className="absolute mt-2 w-48 bg-black shadow-md rounded-md py-2 z-20 opacity-80">
@@ -192,8 +140,6 @@ const NavBar = () => {
               </ul>
             )}
           </li>
-          <li><Link to="/Contact" className="text-white">Contact</Link></li>
-
         </ul>
 
         {menuOpen && (
@@ -210,12 +156,7 @@ const NavBar = () => {
                 <li className="relative">
                   <button onClick={toggleDropdown} className="flex items-center text-white">
                     FS-Direct
-                   {dropdownOpen ? <ArrowDropUpIcon className="ml-8" /> : <ArrowDropDownIcon className="ml-1" />}
-                    {dropdownOpen ? (
-                      <ArrowDropUpIcon className="ml-8" />
-                    ) : (
-                      <ArrowDropDownIcon className="ml-1" />
-                    )}
+                    {dropdownOpen ? <ArrowDropUpIcon className="ml-8" /> : <ArrowDropDownIcon className="ml-1" />}
                   </button>
                   {dropdownOpen && (
                     <ul className="mt-2 w-48 bg-neutral-500 shadow-md rounded-md py-2 z-20 ">
@@ -227,20 +168,12 @@ const NavBar = () => {
                     </ul>
                   )}
                 </li>
-                      <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">1-on-1 meetings</Link></li>
-                      <li><Link to="/FzDirect#meetings" className="block px-4 py-2 text-white hover:bg-gray-700">Team meetings</Link></li>
-                    </ul>
-                  )}
-                </li>
-                <li><Link to="/Contact" className="text-white">Contact</Link></li>
               </ul>
             </div>
           </>
         )}
       </nav>
       {location.pathname === '/' && <Slideshow />} {/* Conditionally render Slideshow */}
-            {location.pathname === '/' && <Slideshow />}
-
     </>
   );
 };
